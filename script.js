@@ -89,6 +89,8 @@ const countDown = () => {
     level = 1;
     timer = 0;
     timerDisplay.textContent = "1:00";
+    gameBtn.textContent = "Start Game";
+    gameBtn.removeEventListener("click");
   }
 };
 
