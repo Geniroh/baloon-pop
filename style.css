@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #7CC1AC;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.logo-img img{
+    max-height: 120px;
+}
+
+main{
+    width: 600px;
+    align-items: center;
+    background-color: #020113;
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526); 
+    height: fit-content;
+    margin-inline: auto;
+    border-radius: 3rem;
+}
+
+.game-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background: #E27D5F;
+    border-radius: 3rem 3rem 0 0;
+}
+
+.game-bar button{
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #58A79B;
+    color: #fff;
+    font-size: 1rem;
+    font: inherit;
+    border: 2px solid #232526;
+    border: 0;
+    cursor: pointer;
+}
+
+.game-bar h3{
+    font-size: 1.2rem;
+}
+
+.game-window{
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-window p{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: #e7d702;
+}
+
+@media screen and (max-width: 500px) {
+    main{
+       width: 90%;
+       margin-inline: auto;
+    }
+    .game-window p{
+        height: 3rem;
+        width: 3rem;
+    }
+    .game-bar h3{
+        font-size: 0.9rem;
+    }
+}
