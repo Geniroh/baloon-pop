@@ -70,6 +70,7 @@ main{
 
 .game-window p{
     height: 6rem;
+    cursor: pointer;
     width: 6rem;
     border-radius: 50%;
     background-color: #e7d702;

@@ -85,13 +85,14 @@ const countDown = () => {
     clearInterval(countDownTimerId);
     play("./sound/game-over.wav");
     alert("You lost");
-    gameWindow.innerHTML = "";
-    level = 1;
-    timer = 0;
-    levelDisplay.textContent = level;
-    timerDisplay.textContent = timer;
-    gameBtn.removeEventListener("click");
-    gameBtn.textContent = "Start Game";
+    // gameWindow.innerHTML = "";
+    // level = 1;
+    // timer = 0;
+    // levelDisplay.textContent = level;
+    // timerDisplay.textContent = timer;
+    // gameBtn.removeEventListener("click");
+    // gameBtn.textContent = "Start Game";
+    location.reload();
   }
 };
 
