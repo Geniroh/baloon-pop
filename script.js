@@ -86,6 +86,9 @@ const countDown = () => {
     play("./sound/game-over.wav");
     alert("You lost");
     gameWindow.innerHTML = "";
+    level = 1;
+    timer = 0;
+    timerDisplay.textContent = "1:00";
   }
 };
 
